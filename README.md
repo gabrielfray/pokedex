@@ -37,8 +37,9 @@
 ### Frontend:
 
 - [Angular 20](https://angular.io/)
-- [RxJS](https://rxjs.dev/)
 - [Angular Material](https://material.angular.io/)
+- [RxJS](https://rxjs.dev/)
+- [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/) (para efeito 3D nos cards)
 - [Typescript](https://www.typescriptlang.org/)
 - [SCSS](https://sass-lang.com/)
 - [PokéAPI](https://pokeapi.co/) (API de dados de Pokémon)

@@ -1,6 +1,17 @@
 <app-header (searchChange)="onSearchChange($event)" (logoClick)="onLogoClick()"></app-header>
 
 <div class="pokemon-list-container">
+  <div class="pokemon-filters">
+    <button [class.active]="activeType === ''" (click)="filterByType('')">Todos</button>
+    <button
+      *ngFor="let type of pokemonTypes"
+      [class.active]="activeType === type"
+      (click)="filterByType(type)"
+    >
+      {{ type | titlecase }}
+    </button>
+  </div>
+
   <div *ngIf="loading()" class="pokemon-grid">
     <div *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" class="pokemon-card-skeleton">
       <div class="skeleton-header"></div>
@@ -19,17 +30,6 @@
   <div *ngIf="error()" class="error">
     <p>{{ error() }}</p>
     <button (click)="loadPokemons(currentPage())">Tentar novamente</button>
-  </div>
-
-  <div class="pokemon-filters">
-<button [class.active]="activeType === ''" (click)="filterByType('')">Todos</button>    
-    <button
-      *ngFor="let type of pokemonTypes"
-      [class.active]="activeType === type"
-      (click)="filterByType(type)"
-    >
-      {{ type | titlecase }}
-    </button>
   </div>
 
   <div *ngIf="loading()" class="pokemon-grid">

@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="app-header">
+  <!-- Logo -->
+  <div class="logo-container" (click)="onLogoClick()">
+    <img src="pokemon-logo.png" alt="Logo" class="logo" />
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="search-wrapper" [class.active]="showSearch()">
+    <input
+      class="search-input"
+      type="text"
+      placeholder="Buscar Pokémon..."
+      [(ngModel)]="searchValue"
+      (input)="onSearchChange()"
+    />
+  </div>
+
+  <div class="actions">
+    <button mat-icon-button (click)="toggleSearch()">
+      <mat-icon class="icon">search</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Notificações">
+      <mat-icon class="icon">notifications</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Configurações">
+      <mat-icon class="icon">settings</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

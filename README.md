@@ -1,7 +1,7 @@
 <a name="tabela-de-conteúdos"></a>
 
 <h1 align="center">
-  Pokédex Angular
+  Pokédex
 </h1>
 
 <p align="center">

@@ -66,3 +66,16 @@
 yarn install
 # ou
 npm install
+```
+
+<a name="devs"></a>
+
+## 5. Desenvolvedor
+
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+- <a name="Gabriel-Fray" href="https://www.linkedin.com/in/gabrielfray/" target="_blank">Gabriel Fray</a>
+
+<a name="terms"></a>
+

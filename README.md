@@ -28,7 +28,7 @@
 
 ## 2. Links Relevantes
 
-- [Link da Aplicação](https://pokedex-pipk4mf64-gabrielfrays-projects.vercel.app/)
+- [Link da Aplicação](https://pokedex-topaz-theta.vercel.app/)
 
 <a name="techs"></a>
 

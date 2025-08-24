@@ -5,17 +5,24 @@ import { Pokemon } from '../../models/pokemon.model';
 import { PokedexService } from '../../services/pokedex.service';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-pokemon-list',
-  imports: [CommonModule, PokemonCardComponent, MatPaginatorModule, HeaderComponent],
+  imports: [
+    CommonModule,
+    PokemonCardComponent,
+    MatPaginatorModule,
+    HeaderComponent,
+    FooterComponent,
+  ],
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.scss'],
 })
 export class PokemonListComponent implements OnInit {
-  allPokemons = signal<Pokemon[]>([]); // TODOS os pokémons (para filtro global)
-  pokemons = signal<Pokemon[]>([]); // Lista atual (página ou busca)
-  filteredPokemons = signal<Pokemon[]>([]); // Lista mostrada na grid
+  allPokemons = signal<Pokemon[]>([]);
+  pokemons = signal<Pokemon[]>([]);
+  filteredPokemons = signal<Pokemon[]>([]);
   loading = signal(true);
   currentPage = signal(1);
   pageSize = 20;

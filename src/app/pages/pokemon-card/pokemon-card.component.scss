@@ -65,11 +65,11 @@
 }
 
 .pokemon-card {
-  transform: translateZ(30px); /* faz o card "subir" no tilt */
+  transform: translateZ(30px);
 }
 
 .pokemon-image img {
-  transform: translateZ(50px); /* deixa o Pokémon destacado */
+  transform: translateZ(50px);
 }
 
 .card-container:hover {

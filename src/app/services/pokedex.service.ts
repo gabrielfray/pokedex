@@ -32,7 +32,7 @@ export interface Pokemon {
 })
 export class PokedexService {
   private apiUrl = 'https://pokeapi.co/api/v2/pokemon';
-  private totalPokemons = 251;
+  private totalPokemons = 1025;
 
   constructor(private http: HttpClient) {}
 

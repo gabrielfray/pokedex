@@ -26,7 +26,7 @@ export class PokemonListComponent implements OnInit {
   loading = signal(true);
   currentPage = signal(1);
   pageSize = 20;
-  totalPokemons = 151;
+  totalPokemons = 1025;
   error = signal<string | null>(null);
   searchTerm = signal('');
   activeType: string = '';
